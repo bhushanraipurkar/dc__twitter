@@ -1,10 +1,10 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from "../styles/index.module.css"
-import IndexPageFeed from '../components/feeds/bunch/IndexPageFeed'
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import IndexPageFeed from '../components/feeds/bunch/IndexPageFeed';
+import styles from '../styles/index.module.css';
+import Profile from "../components/profile/bunch/ProfileIndex"
 
-const Home: NextPage = () => {
+const profile = () => {
   return (
     <div>
       <Head>
@@ -14,13 +14,14 @@ const Home: NextPage = () => {
       </Head>
       <div className={styles.index__container}>
         <div className={styles.index__content}>
-          <h1>Jai Hanumaan</h1> </div>
+          <Profile/>
+        </div>
         <div className={styles.index__feeds}>
           <IndexPageFeed />
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default Home
+export default profile;
