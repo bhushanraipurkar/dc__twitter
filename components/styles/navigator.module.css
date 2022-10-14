@@ -1,0 +1,55 @@
+.navigator__parent
+{
+    position: sticky;
+    top: 0%;
+    min-height: 100vh;
+    border-right: 1px solid gray;
+    margin-top: -15px;
+}
+.navigator__icon__style
+{
+    width: 30px;
+    height: 30px;
+}
+.navigator__container
+{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 50px 20px 0px;
+}
+.navigator__row
+{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 10px 0px 10px;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+.navigator__row:hover
+{
+    background-color: rgba(0, 0, 0, 0.057);
+    border-radius: 50px;
+}
+.navigator__row p
+{
+    font-size: 20px;
+}
+.navigator__tweet__button
+{
+    display: flex;
+    margin-top: 15%;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px 15px 0px;
+    background-color: var(--bg__color);
+    color: var(--text__color);
+    border-radius: 50px;
+    cursor: pointer;
+}
+.navigator__tweet__button:hover{
+    background-color: rgba(0, 0, 0, 0.769);
+    transition: all;
+    transition-duration: 0.2s;
+}
+

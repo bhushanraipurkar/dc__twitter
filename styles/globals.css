@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root
+{
+    --text__color:#fff;
+    --bg__color:#000;
+    --bg__gray:#EFF3F4;
+    --bg__gray__v2: #F7F9F9;
+}
+
+body
+{
+    margin: 0% 10% 0% 10%;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+}
+.app__container
+{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.app__navbar
+{
+   position: sticky;
+   top: 0%;
+   left: 0%; 
+}
+.app__content
+{
+    flex: 1;
+}
+.hashtag
+{
+    color: #1D9BF0;
+}
+.hashtag:hover
+{
+    text-decoration: underline;
+}
