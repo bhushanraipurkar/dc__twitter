@@ -4,13 +4,22 @@
 {
     --text__color:#fff;
     --bg__color:#000;
+    --hover__bg__color:#272C30;
     --bg__gray:#EFF3F4;
     --bg__gray__v2: #F7F9F9;
+    --border__color: #e6e6e6;
+    --gray__text__color: #536471;
+    --green__text__color: #009900;
+    --fade__green__text__color: #08c6082a;
+}
+p
+{
+    margin: 0;
 }
 
 body
 {
-    margin: 0% 10% 0% 10%;
+    margin: 0% 10% 0% 9%;
     padding: 0;
     box-sizing: border-box;
     min-height: 100vh;
@@ -35,8 +44,38 @@ body
 .hashtag
 {
     color: #1D9BF0;
+    cursor: pointer;
 }
 .hashtag:hover
 {
     text-decoration: underline;
+}
+.terminology
+{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-width: 75%;
+    padding-top: 5%;
+    margin: auto;
+}
+.terminology > *
+{
+    font-size: small;
+    color: var(--gray__text__color);
+}
+.terminology p:not(:last-child):hover
+{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.terminology:last-child
+{
+    text-decoration: none;
+}
+.terminology:last-child:hover
+{
+    text-decoration: none;
+    cursor: auto;
 }

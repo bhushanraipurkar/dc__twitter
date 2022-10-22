@@ -39,4 +39,6 @@
     height: 30px;
     width: 30px;
     color: gray;
+    transition: all;
+    transition-duration: 0.5s;
 }

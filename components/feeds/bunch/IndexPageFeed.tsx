@@ -1,13 +1,23 @@
 import React from 'react'
 import Search from '../helper/Search'
 import WhatsHapp from '../helper/WhatsHapp'
+import WhoToFollow from '../helper/WhoToFollow';
 
 const IndexPageFeed = () => {
   return (
     <div className="horizontal__center__alignment">
       <Search />
       <WhatsHapp />
-      
+      <WhoToFollow/>
+      <div className='terminology'>
+        <p>Terms of service</p>
+        <p>Privacy policy</p>
+        <p>Cookie policy</p>
+        <p>Accessibility</p>
+        <p>Ads info</p>
+        <p>More...</p>
+        <p>2022 CowCow, Inc</p>
+      </div>
     </div>
   );
 }

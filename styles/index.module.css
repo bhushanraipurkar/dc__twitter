@@ -6,16 +6,14 @@
 }
 .index__content
 {
-   /* display: flex;
-   align-items: center;
-   justify-content: center; */
-   padding: 5%;
+   /* padding: 3% ; */
+   border-right: 1px solid var(--border__color);
 }
 .index__feeds
 {
     right: 0%;
     width: 100%;
-    border-left: 1px solid var(--bg__gray);
-   padding-left: 5%;
+    padding-left: 5%;
     padding-top: 10px;
+    padding-bottom: 30px;
 }

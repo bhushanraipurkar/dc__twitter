@@ -14,9 +14,13 @@
 {
     font-weight: bolder;
     font-size: 15px ;
+    padding: 5px;
 
 }
 .wh__post__micro__heading
 {
-    font-size: 13px;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px;
+    color: var(--gray__text__color);
 }

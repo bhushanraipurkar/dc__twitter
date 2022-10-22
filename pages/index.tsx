@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from "../styles/index.module.css"
 import IndexPageFeed from '../components/feeds/bunch/IndexPageFeed'
+import IndexPageHome from '../components/home/bunch/IndexPageHome'
 
 const Home: NextPage = () => {
   return (
@@ -14,7 +15,8 @@ const Home: NextPage = () => {
       </Head>
       <div className={styles.index__container}>
         <div className={styles.index__content}>
-          <h1>Jai Hanumaan</h1> </div>
+          <IndexPageHome/>
+        </div>
         <div className={styles.index__feeds}>
           <IndexPageFeed />
         </div>
