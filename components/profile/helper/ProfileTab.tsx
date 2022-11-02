@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction, useState } from 'react';
+import { Dispatch, SetStateAction, useEffect, useState } from 'react';
 import Tweets from './Tweets';
 import TAR from './TweetsAndReply';
 import Media from './Media';
@@ -7,6 +7,8 @@ import styles from '../styles/profiletab.module.css';
 
 const Ptab = () => {
   const [activeTab, setActiveTab] = useState<Number>(0);
+
+  
 
   return (
     <div>

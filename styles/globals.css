@@ -25,6 +25,10 @@ body
     min-height: 100vh;
     font-family: 'Ubuntu', sans-serif;
 }
+.active__tab
+{
+    overflow-y: hidden;
+}
 .app__container
 {
     display: flex;
@@ -78,4 +82,18 @@ body
 {
     text-decoration: none;
     cursor: auto;
+}
+.name
+{
+    font-weight: bold;
+}
+
+.username
+{
+    color: var(--gray__text__color);
+}
+.username:hover
+{
+    text-decoration: underline;
+    cursor: pointer;
 }

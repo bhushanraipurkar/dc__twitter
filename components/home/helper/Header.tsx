@@ -3,7 +3,9 @@ import React from 'react'
 import {Star,ImageIcon,GifIcon,PollIcon,EmojiIcon,ScheduleIcon,LocationIcon} from "../../helper/NavigtorIcons"
 import styles from "../styles/header.module.css"
 
+
 const Header = () => {
+
   return (
     <div className={styles.header__container}>
       <div className={styles.header__starting}>

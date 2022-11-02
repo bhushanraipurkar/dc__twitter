@@ -1,5 +1,9 @@
+import { MouseEventHandler } from "react";
 import styles from "../styles/navigator.module.css"
-interface OnlyClassNameInterface extends React.FC<{ className?: string }> {}
+interface OnlyClassNameInterface
+  extends React.FC<{
+    className?: string;
+  }> {}
 
 export const Home = () =>{
     return (
@@ -149,7 +153,7 @@ export const More = () =>{
       </svg>
     );
 }
-export const Search__Icon = () => {
+export const Search__Icon:OnlyClassNameInterface = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -157,6 +161,7 @@ export const Search__Icon = () => {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
+      className={props.className}
     >
       <path
         strokeLinecap="round"
@@ -166,7 +171,7 @@ export const Search__Icon = () => {
     </svg>
   );
 }
-export const Logo = () => {
+export const LogoDark:OnlyClassNameInterface = (props) => {
   return (
     <svg
       width="200"
@@ -174,6 +179,28 @@ export const Logo = () => {
       viewBox="0 0 200 227"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      className={props.className}
+    >
+      <path
+        d="M8.3574 0L124.857 72.5C128.357 74.1667 137.757 77.6 147.357 78C156.957 78.4 165.357 74.5 168.357 72.5L199.357 115C198.691 116 196.757 117.7 194.357 116.5C191.957 115.3 176.024 105.333 168.357 100.5L157.357 111.5L153.176 115.681L98.1012 170.756L93.8574 175L42.8574 226C40.5241 226.667 36.2574 226.4 37.8574 220C41.8574 215.6 63.5241 194.167 73.8574 184C74.3574 182 74.0574 178.1 68.8574 178.5C62.0574 184.9 37.0241 209.833 25.3574 221.5C22.8574 221.833 18.1574 221 19.3574 215C24.1574 210.2 46.0241 188.667 56.3574 178.5C56.8574 176.167 56.3574 171.7 50.3574 172.5C43.5574 180.1 19.5241 204 8.3574 215C5.52407 215.833 0.357398 215.9 2.3574 209.5C11.1574 201.1 35.3574 176.333 46.3574 165L90.3574 118C90.3574 117 89.4574 115 85.8574 115C82.6574 113.4 27.8574 79.3333 0.857406 62.5C-0.475927 59.8333 -1.24259 54.8 6.35741 56C12.3574 59.2 36.8574 75 48.3574 82.5C50.8574 82.5 55.3574 81.3 53.3574 76.5C48.5574 73.3 17.0241 53.1667 1.85742 43.5C0.857411 41.3333 0.357393 37.1 6.35741 37.5C11.1574 39.9 36.3574 55.8333 48.3574 63.5C52.0241 64 58.1574 63.5 53.3574 57.5C48.1574 53.9 17.8574 35 3.35742 26C2.52407 23.5 2.35738 18.6 8.3574 19C12.7574 22.2 37.5241 37.6667 49.3574 45C52.8574 46.1667 58.9574 46.6 55.3574 39C54.5574 39 21.6908 18 5.35742 7.5C4.19074 5.83333 3.15738 2 8.3574 0Z"
+        fill="white"
+      />
+      <path
+        d="M138.357 51.5L122.857 67C135.257 78.6 157.024 73.5 166.357 69.5C164.024 66 158.057 57.5 152.857 51.5C147.657 45.5 141.024 49 138.357 51.5Z"
+        fill="white"
+      />
+    </svg>
+  );
+}
+export const Logo: OnlyClassNameInterface = (props) => {
+  return (
+    <svg
+      width="200"
+      height="227"
+      viewBox="0 0 200 227"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={props.className}
     >
       <path
         d="M8.3574 0L124.857 72.5C128.357 74.1667 137.757 77.6 147.357 78C156.957 78.4 165.357 74.5 168.357 72.5L199.357 115C198.691 116 196.757 117.7 194.357 116.5C191.957 115.3 176.024 105.333 168.357 100.5L157.357 111.5L153.176 115.681L98.1012 170.756L93.8574 175L42.8574 226C40.5241 226.667 36.2574 226.4 37.8574 220C41.8574 215.6 63.5241 194.167 73.8574 184C74.3574 182 74.0574 178.1 68.8574 178.5C62.0574 184.9 37.0241 209.833 25.3574 221.5C22.8574 221.833 18.1574 221 19.3574 215C24.1574 210.2 46.0241 188.667 56.3574 178.5C56.8574 176.167 56.3574 171.7 50.3574 172.5C43.5574 180.1 19.5241 204 8.3574 215C5.52407 215.833 0.357398 215.9 2.3574 209.5C11.1574 201.1 35.3574 176.333 46.3574 165L90.3574 118C90.3574 117 89.4574 115 85.8574 115C82.6574 113.4 27.8574 79.3333 0.857406 62.5C-0.475927 59.8333 -1.24259 54.8 6.35741 56C12.3574 59.2 36.8574 75 48.3574 82.5C50.8574 82.5 55.3574 81.3 53.3574 76.5C48.5574 73.3 17.0241 53.1667 1.85742 43.5C0.857411 41.3333 0.357393 37.1 6.35741 37.5C11.1574 39.9 36.3574 55.8333 48.3574 63.5C52.0241 64 58.1574 63.5 53.3574 57.5C48.1574 53.9 17.8574 35 3.35742 26C2.52407 23.5 2.35738 18.6 8.3574 19C12.7574 22.2 37.5241 37.6667 49.3574 45C52.8574 46.1667 58.9574 46.6 55.3574 39C54.5574 39 21.6908 18 5.35742 7.5C4.19074 5.83333 3.15738 2 8.3574 0Z"
@@ -185,9 +212,9 @@ export const Logo = () => {
       />
     </svg>
   );
-}
+};
 
-export const Star = () => {
+export const Star:OnlyClassNameInterface = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -195,7 +222,7 @@ export const Star = () => {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className=""
+      className={props.className}
     >
       <path
         strokeLinecap="round"
@@ -206,7 +233,7 @@ export const Star = () => {
   );
 }
 
-export const ImageIcon = () => {
+export const ImageIcon:OnlyClassNameInterface = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -214,7 +241,7 @@ export const ImageIcon = () => {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="w-6 h-6"
+      className={props.className}
     >
       <path
         strokeLinecap="round"
@@ -225,7 +252,7 @@ export const ImageIcon = () => {
   );
 }
 
-export const GifIcon = () => {
+export const GifIcon:OnlyClassNameInterface = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -233,7 +260,7 @@ export const GifIcon = () => {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="w-6 h-6"
+      className={props.className}
     >
       <path
         strokeLinecap="round"
@@ -242,8 +269,8 @@ export const GifIcon = () => {
       />
     </svg>
   );
-}
-export const PollIcon = () =>{
+};
+export const PollIcon:OnlyClassNameInterface = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -251,7 +278,7 @@ export const PollIcon = () =>{
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="w-6 h-6"
+      className={props.className}
     >
       <path
         strokeLinecap="round"
@@ -260,8 +287,8 @@ export const PollIcon = () =>{
       />
     </svg>
   );
-}
-export const EmojiIcon = () =>{
+};
+export const EmojiIcon:OnlyClassNameInterface = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -269,7 +296,7 @@ export const EmojiIcon = () =>{
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="w-6 h-6"
+      className={props.className}
     >
       <path
         strokeLinecap="round"
@@ -278,8 +305,8 @@ export const EmojiIcon = () =>{
       />
     </svg>
   );
-}
-export const ScheduleIcon = () => {
+};
+export const ScheduleIcon:OnlyClassNameInterface = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -287,7 +314,7 @@ export const ScheduleIcon = () => {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="w-6 h-6"
+      className={props.className}
     >
       <path
         strokeLinecap="round"
@@ -296,8 +323,8 @@ export const ScheduleIcon = () => {
       />
     </svg>
   );
-}
-export const LocationIcon = () => {
+};
+export const LocationIcon:OnlyClassNameInterface = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -305,7 +332,7 @@ export const LocationIcon = () => {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="w-6 h-6"
+      className={props.className}
     >
       <path
         strokeLinecap="round"
@@ -319,7 +346,7 @@ export const LocationIcon = () => {
       />
     </svg>
   );
-}
+};
 export const VerifiedIcon:OnlyClassNameInterface = (props) => {
   return (
     <svg
@@ -478,6 +505,159 @@ export const MailIcon:OnlyClassNameInterface = (props) => {
     >
       <path fill="none" d="M0 0h24v24H0z" />
       <path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm17 4.238l-7.928 7.1L4 7.216V19h16V7.238zM4.511 5l7.55 6.662L19.502 5H4.511z" />
+    </svg>
+  );
+}
+export const StarIcon:OnlyClassNameInterface = (props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className={props.className}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+      />
+    </svg>
+  );
+}
+
+export const AddNewIcon:OnlyClassNameInterface = (props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className={props.className}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M12 10.5v6m3-3H9m4.06-7.19l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z"
+      />
+    </svg>
+  );
+}
+
+
+export const ListIcon: OnlyClassNameInterface = (props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className={props.className}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z"
+      />
+    </svg>
+  );
+};
+export const SettingIcon:OnlyClassNameInterface = (props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className={props.className}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 011.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.56.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.893.149c-.425.07-.765.383-.93.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 01-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.397.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 01-.12-1.45l.527-.737c.25-.35.273-.806.108-1.204-.165-.397-.505-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.107-1.204l-.527-.738a1.125 1.125 0 01.12-1.45l.773-.773a1.125 1.125 0 011.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894z"
+      />
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+      />
+    </svg>
+  );
+}
+export const CancelIcon:OnlyClassNameInterface = (props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className={props.className}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+      />
+    </svg>
+  );
+}
+export const XIcon:OnlyClassNameInterface = (props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className={props.className}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M6 18L18 6M6 6l12 12"
+      />
+    </svg>
+  );
+}
+
+export const DownIcon:OnlyClassNameInterface = (props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className={props.className}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+      />
+    </svg>
+  );
+}
+export const EarthIcon:OnlyClassNameInterface = (props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className={props.className}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M20.893 13.393l-1.135-1.135a2.252 2.252 0 01-.421-.585l-1.08-2.16a.414.414 0 00-.663-.107.827.827 0 01-.812.21l-1.273-.363a.89.89 0 00-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.212.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 01-1.81 1.025 1.055 1.055 0 01-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.655-.261a2.25 2.25 0 01-1.383-2.46l.007-.042a2.25 2.25 0 01.29-.787l.09-.15a2.25 2.25 0 012.37-1.048l1.178.236a1.125 1.125 0 001.302-.795l.208-.73a1.125 1.125 0 00-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 01-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 01-1.458-1.137l1.411-2.353a2.25 2.25 0 00.286-.76m11.928 9.869A9 9 0 008.965 3.525m11.928 9.868A9 9 0 118.965 3.525"
+      />
     </svg>
   );
 }

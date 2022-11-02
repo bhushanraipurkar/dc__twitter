@@ -20,7 +20,7 @@
 .wh__post__micro__heading
 {
     font-size: 15px;
-    font-weight: bold;
+    font-weight: lighter;
     padding: 5px;
     color: var(--gray__text__color);
 }
