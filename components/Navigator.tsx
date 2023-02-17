@@ -1,10 +1,22 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useState } from 'react'
-import {Home,Bookmark,Hash,List,Message,More,Notification,Profile,Logo, MoreIcon} from "../components/helper/NavigtorIcons"
-import styles from "./styles/navigator.module.css"
+import React, { useState } from 'react';
+import {
+  Home,
+  Bookmark,
+  Hash,
+  List,
+  Message,
+  More,
+  Notification,
+  Profile,
+  Logo,
+  MoreIcon,
+} from '../components/helper/NavigtorIcons';
+import styles from './styles/navigator.module.css';
+import { useSession, signIn, signOut } from 'next-auth/react';
 
-const Navigator = ({handleClick}: notificationType) => {
+const Navigator = ({ handleClick }: notificationType) => {
   return (
     <div className={styles.navigator__parent}>
       <div className={styles.navigator__container}>
@@ -55,7 +67,9 @@ const Navigator = ({handleClick}: notificationType) => {
           <More />
           <p>More</p>
         </div>
-        <div onClick={handleClick} className={styles.navigator__tweet__button}>Tweet</div>
+        <div onClick={handleClick} className={styles.navigator__tweet__button}>
+          Tweet
+        </div>
       </div>
       <div className={styles.navigation__user__set}>
         <Image
@@ -70,7 +84,9 @@ const Navigator = ({handleClick}: notificationType) => {
             <p className={styles.navigation__user__name}>Name</p>
             <p className={styles.navigation__user__username}>@username</p>
           </div>
-          <MoreIcon className={styles.navigator__more__icon} />
+          <button onClick={() => signIn()}>
+            <MoreIcon className={styles.navigator__more__icon} />
+          </button>
         </div>
       </div>
     </div>
@@ -81,5 +97,4 @@ type notificationType = {
   handleClick: () => void;
 };
 
-export default Navigator
-
+export default Navigator;
