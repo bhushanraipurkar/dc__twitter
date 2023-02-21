@@ -16,7 +16,11 @@ import {
 import styles from './styles/navigator.module.css';
 import { useSession, signIn, signOut } from 'next-auth/react';
 
+
+
+
 const Navigator = ({ handleClick }: notificationType) => {
+  const { data: session } = useSession()
   return (
     <div className={styles.navigator__parent}>
       <div className={styles.navigator__container}>
@@ -81,8 +85,8 @@ const Navigator = ({ handleClick }: notificationType) => {
         />
         <div className={styles.navigation__user__right}>
           <div>
-            <p className={styles.navigation__user__name}>Name</p>
-            <p className={styles.navigation__user__username}>@username</p>
+            <p className={styles.navigation__user__name}>{session?.user?.name || " "}</p>
+            <p className={styles.navigation__user__username}>@{session?.user?.email || " "}</p>
           </div>
           <button onClick={() => signIn()}>
             <MoreIcon className={styles.navigator__more__icon} />
