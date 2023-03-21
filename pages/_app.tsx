@@ -1,7 +1,7 @@
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
 import Navigator from '../components/Navigator';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from '../styles/popup.module.css';
 import { XIcon } from '../components/helper/NavigtorIcons';
 import PopUpBody from '../components/PopUpBody';
@@ -15,6 +15,7 @@ interface MyAppProps extends AppProps {
 }
 
 function MyApp({ Component, pageProps }: MyAppProps) {
+
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const handleClick = () => {
     setIsOpen(!isOpen);

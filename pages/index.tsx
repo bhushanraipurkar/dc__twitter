@@ -4,8 +4,29 @@ import Image from 'next/image'
 import styles from "../styles/index.module.css"
 import IndexPageFeed from '../components/feeds/bunch/IndexPageFeed'
 import IndexPageHome from '../components/home/bunch/IndexPageHome'
+import { useSession } from 'next-auth/react'
+import { useState, useEffect } from 'react';
 
 const Home: NextPage = () => {
+
+  const { data: session, status } = useSession();
+
+
+  useEffect(() => {
+    if (session && session.user) {
+      const { name, email } = session.user
+      fetch(`https://56ad-2409-40c2-1034-30c1-dd01-cc56-9885-1182.in.ngrok.io/user/register` as string, {
+        method: 'POST',
+        body: JSON.stringify({ name, email }),
+        headers: { 'Content-Type': 'application/json' },
+      })
+        .then((response) => response.json())
+        .then((data) => console.log(data))
+        .catch((error) => console.error(error))
+    }
+  }, [session])
+  // console.log(`${process.env.API_LINK}/user/register` as string)
+  // console.log(process.env.API_LINK)
   return (
     <div>
       <Head>
@@ -15,7 +36,7 @@ const Home: NextPage = () => {
       </Head>
       <div className={styles.index__container}>
         <div className={styles.index__content}>
-          <IndexPageHome/>
+          <IndexPageHome />
         </div>
         <div className={styles.index__feeds}>
           <IndexPageFeed />
