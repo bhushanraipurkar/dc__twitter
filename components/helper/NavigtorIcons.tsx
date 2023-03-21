@@ -1,159 +1,159 @@
-import { MouseEventHandler } from "react";
-import styles from "../styles/navigator.module.css"
+import { MouseEventHandler } from 'react';
+import styles from '../styles/navigator.module.css';
 interface OnlyClassNameInterface
   extends React.FC<{
     className?: string;
   }> {}
 
-export const Home = () =>{
-    return (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className={styles.navigator__icon__style}
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-        />
-      </svg>
-    );
-}
+export const Home = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className={styles.navigator__icon__style}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+      />
+    </svg>
+  );
+};
 
-export const Hash = () =>{
-    return (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className={styles.navigator__icon__style}
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
-        />
-      </svg>
-    );
-}
+export const Hash = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className={styles.navigator__icon__style}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M5.25 8.25h15m-16.5 7.5h15m-1.8-13.5l-3.9 19.5m-2.1-19.5l-3.9 19.5"
+      />
+    </svg>
+  );
+};
 
 export const Notification = () => {
-    return (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className={styles.navigator__icon__style}
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
-        />
-      </svg>
-    );
-}
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className={styles.navigator__icon__style}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
+      />
+    </svg>
+  );
+};
 
 export const Message = () => {
-    return (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className={styles.navigator__icon__style}
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
-        />
-      </svg>
-    );
-}
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className={styles.navigator__icon__style}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+      />
+    </svg>
+  );
+};
 
-export const Bookmark = () =>{
-    return (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className={styles.navigator__icon__style}
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
-        />
-      </svg>
-    );
-}
-export const List = () =>{
-    return (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className={styles.navigator__icon__style}
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
-        />
-      </svg>
-    );
-}
-export const Profile = () =>{
-    return (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className={styles.navigator__icon__style}
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
-        />
-      </svg>
-    );
-}
-export const More = () =>{
-    return (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={1.5}
-        stroke="currentColor"
-        className={styles.navigator__icon__style}
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-        />
-      </svg>
-    );
-}
-export const Search__Icon:OnlyClassNameInterface = (props) => {
+export const Bookmark = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className={styles.navigator__icon__style}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z"
+      />
+    </svg>
+  );
+};
+export const List = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className={styles.navigator__icon__style}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+      />
+    </svg>
+  );
+};
+export const Profile = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className={styles.navigator__icon__style}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+      />
+    </svg>
+  );
+};
+export const More = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth={1.5}
+      stroke="currentColor"
+      className={styles.navigator__icon__style}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+      />
+    </svg>
+  );
+};
+export const Search__Icon: OnlyClassNameInterface = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -170,8 +170,8 @@ export const Search__Icon:OnlyClassNameInterface = (props) => {
       />
     </svg>
   );
-}
-export const LogoDark:OnlyClassNameInterface = (props) => {
+};
+export const LogoDark: OnlyClassNameInterface = (props) => {
   return (
     <svg
       width="200"
@@ -191,7 +191,7 @@ export const LogoDark:OnlyClassNameInterface = (props) => {
       />
     </svg>
   );
-}
+};
 export const Logo: OnlyClassNameInterface = (props) => {
   return (
     <svg
@@ -214,7 +214,7 @@ export const Logo: OnlyClassNameInterface = (props) => {
   );
 };
 
-export const Star:OnlyClassNameInterface = (props) => {
+export const Star: OnlyClassNameInterface = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -231,9 +231,9 @@ export const Star:OnlyClassNameInterface = (props) => {
       />
     </svg>
   );
-}
+};
 
-export const ImageIcon:OnlyClassNameInterface = (props) => {
+export const ImageIcon: OnlyClassNameInterface = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -250,9 +250,9 @@ export const ImageIcon:OnlyClassNameInterface = (props) => {
       />
     </svg>
   );
-}
+};
 
-export const GifIcon:OnlyClassNameInterface = (props) => {
+export const GifIcon: OnlyClassNameInterface = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -270,7 +270,7 @@ export const GifIcon:OnlyClassNameInterface = (props) => {
     </svg>
   );
 };
-export const PollIcon:OnlyClassNameInterface = (props) => {
+export const PollIcon: OnlyClassNameInterface = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -288,7 +288,7 @@ export const PollIcon:OnlyClassNameInterface = (props) => {
     </svg>
   );
 };
-export const EmojiIcon:OnlyClassNameInterface = (props) => {
+export const EmojiIcon: OnlyClassNameInterface = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -306,7 +306,7 @@ export const EmojiIcon:OnlyClassNameInterface = (props) => {
     </svg>
   );
 };
-export const ScheduleIcon:OnlyClassNameInterface = (props) => {
+export const ScheduleIcon: OnlyClassNameInterface = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -324,7 +324,7 @@ export const ScheduleIcon:OnlyClassNameInterface = (props) => {
     </svg>
   );
 };
-export const LocationIcon:OnlyClassNameInterface = (props) => {
+export const LocationIcon: OnlyClassNameInterface = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -347,7 +347,7 @@ export const LocationIcon:OnlyClassNameInterface = (props) => {
     </svg>
   );
 };
-export const VerifiedIcon:OnlyClassNameInterface = (props) => {
+export const VerifiedIcon: OnlyClassNameInterface = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -364,7 +364,7 @@ export const VerifiedIcon:OnlyClassNameInterface = (props) => {
       />
     </svg>
   );
-}
+};
 
 export const CommmentIcon: OnlyClassNameInterface = (props) => {
   return (
@@ -423,7 +423,7 @@ export const HeartIcon: OnlyClassNameInterface = (props) => {
   );
 };
 
-export const ShareIcon:OnlyClassNameInterface = (props) =>{
+export const ShareIcon: OnlyClassNameInterface = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -440,10 +440,9 @@ export const ShareIcon:OnlyClassNameInterface = (props) =>{
       />
     </svg>
   );
-}
+};
 
-
-export const MoreIcon:OnlyClassNameInterface = (props) => {
+export const MoreIcon: OnlyClassNameInterface = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -460,9 +459,9 @@ export const MoreIcon:OnlyClassNameInterface = (props) => {
       />
     </svg>
   );
-}
+};
 
-export const ArrowLeft:OnlyClassNameInterface = (props) =>{
+export const ArrowLeft: OnlyClassNameInterface = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -476,9 +475,9 @@ export const ArrowLeft:OnlyClassNameInterface = (props) =>{
       <path d="M7.828 11H20v2H7.828l5.364 5.364-1.414 1.414L4 12l7.778-7.778 1.414 1.414z" />
     </svg>
   );
-}
+};
 
-export const CalenderIcon:OnlyClassNameInterface = (props) =>{
+export const CalenderIcon: OnlyClassNameInterface = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -492,8 +491,8 @@ export const CalenderIcon:OnlyClassNameInterface = (props) =>{
       <path d="M17 3h4a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h4V1h2v2h6V1h2v2zm3 8H4v8h16v-8zm-5-6H9v2H7V5H4v4h16V5h-3v2h-2V5zm-9 8h2v2H6v-2zm5 0h2v2h-2v-2zm5 0h2v2h-2v-2z" />
     </svg>
   );
-}
-export const MailIcon:OnlyClassNameInterface = (props) => {
+};
+export const MailIcon: OnlyClassNameInterface = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -507,8 +506,8 @@ export const MailIcon:OnlyClassNameInterface = (props) => {
       <path d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm17 4.238l-7.928 7.1L4 7.216V19h16V7.238zM4.511 5l7.55 6.662L19.502 5H4.511z" />
     </svg>
   );
-}
-export const StarIcon:OnlyClassNameInterface = (props) => {
+};
+export const StarIcon: OnlyClassNameInterface = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -525,9 +524,9 @@ export const StarIcon:OnlyClassNameInterface = (props) => {
       />
     </svg>
   );
-}
+};
 
-export const AddNewIcon:OnlyClassNameInterface = (props) => {
+export const AddNewIcon: OnlyClassNameInterface = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -544,8 +543,7 @@ export const AddNewIcon:OnlyClassNameInterface = (props) => {
       />
     </svg>
   );
-}
-
+};
 
 export const ListIcon: OnlyClassNameInterface = (props) => {
   return (
@@ -565,7 +563,7 @@ export const ListIcon: OnlyClassNameInterface = (props) => {
     </svg>
   );
 };
-export const SettingIcon:OnlyClassNameInterface = (props) => {
+export const SettingIcon: OnlyClassNameInterface = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -587,8 +585,8 @@ export const SettingIcon:OnlyClassNameInterface = (props) => {
       />
     </svg>
   );
-}
-export const CancelIcon:OnlyClassNameInterface = (props) => {
+};
+export const CancelIcon: OnlyClassNameInterface = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -605,8 +603,8 @@ export const CancelIcon:OnlyClassNameInterface = (props) => {
       />
     </svg>
   );
-}
-export const XIcon:OnlyClassNameInterface = (props) => {
+};
+export const XIcon: OnlyClassNameInterface = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -623,9 +621,9 @@ export const XIcon:OnlyClassNameInterface = (props) => {
       />
     </svg>
   );
-}
+};
 
-export const DownIcon:OnlyClassNameInterface = (props) => {
+export const DownIcon: OnlyClassNameInterface = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -642,8 +640,8 @@ export const DownIcon:OnlyClassNameInterface = (props) => {
       />
     </svg>
   );
-}
-export const EarthIcon:OnlyClassNameInterface = (props) => {
+};
+export const EarthIcon: OnlyClassNameInterface = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -660,4 +658,42 @@ export const EarthIcon:OnlyClassNameInterface = (props) => {
       />
     </svg>
   );
-}
+};
+
+export const LogoutIcon: OnlyClassNameInterface = (props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth="1.5"
+      stroke="currentColor"
+      className={props.className}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15M12 9l-3 3m0 0l3 3m-3-3h12.75"
+      />
+    </svg>
+  );
+};
+
+export const LogINIcon: OnlyClassNameInterface = (props) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      strokeWidth="1.5"
+      stroke="currentColor"
+      className={props.className}
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9"
+      />
+    </svg>
+  );
+};

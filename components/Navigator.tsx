@@ -12,6 +12,8 @@ import {
   Profile,
   Logo,
   MoreIcon,
+  LogoutIcon,
+  LogINIcon,
 } from '../components/helper/NavigtorIcons';
 import styles from './styles/navigator.module.css';
 import { useSession, signIn, signOut } from 'next-auth/react';
@@ -71,6 +73,15 @@ const Navigator = ({ handleClick }: notificationType) => {
           Tweet
         </div>
       </div>
+      <AccountBar />
+    </div>
+  );
+};
+
+const AccountBar = () => {
+  const { data: session, status } = useSession();
+  if (status === 'authenticated') {
+    return (
       <div className={styles.navigation__user__set}>
         <Image
           src="/one.jpg"
@@ -81,16 +92,30 @@ const Navigator = ({ handleClick }: notificationType) => {
         />
         <div className={styles.navigation__user__right}>
           <div>
-            <p className={styles.navigation__user__name}>Name</p>
-            <p className={styles.navigation__user__username}>@username</p>
+            <p className={styles.navigation__user__name}>
+              {session.user?.name?.slice(0, 10) || 'undefined'}..
+            </p>
+            <p className={styles.navigation__user__username}>
+              @{session.user?.email?.slice(0, 8) || 'undefined'}..
+            </p>
           </div>
-          <button onClick={() => signIn()}>
-            <MoreIcon className={styles.navigator__more__icon} />
+          <button
+            className={styles.logout__container}
+            onClick={() => signOut()}
+          >
+            <LogoutIcon className={styles.navigator__more__icon} />
           </button>
         </div>
       </div>
-    </div>
-  );
+    );
+  } else {
+    return (
+      <div className={styles.navigation__user__set} onClick={() => signIn()}>
+        <h4>Login Please</h4>
+        <LogINIcon className={styles.navigator__more__icon} />
+      </div>
+    );
+  }
 };
 
 type notificationType = {

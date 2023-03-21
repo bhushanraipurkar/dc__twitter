@@ -1,15 +1,17 @@
-import React from 'react'
-import Search from '../helper/Search'
-import WhatsHapp from '../helper/WhatsHapp'
+import React from 'react';
+import Search from '../helper/Search';
+import WhatsHapp from '../helper/WhatsHapp';
 import WhoToFollow from '../helper/WhoToFollow';
+import { useSession } from 'next-auth/react';
 
 const IndexPageFeed = () => {
+  const { status } = useSession();
   return (
     <div className="horizontal__center__alignment">
       <Search />
       <WhatsHapp />
-      <WhoToFollow/>
-      <div className='terminology'>
+      {status === 'authenticated' ? <WhoToFollow /> : <div></div>}
+      <div className="terminology">
         <p>Terms of service</p>
         <p>Privacy policy</p>
         <p>Cookie policy</p>
@@ -20,6 +22,6 @@ const IndexPageFeed = () => {
       </div>
     </div>
   );
-}
+};
 
-export default IndexPageFeed
+export default IndexPageFeed;
