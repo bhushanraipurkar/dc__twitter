@@ -1,17 +1,20 @@
-import React from 'react'
-import Header from '../helper/Header'
-import Posts from '../helper/Posts'
-import styles from '../styles/index.module.css'
+import React, { useContext } from 'react';
+import Header from '../helper/Header';
+import Posts from '../helper/Posts';
+import styles from '../styles/index.module.css';
+import { UserContext } from '../../../pages';
 
 const IndexPageHome = () => {
+  const { users } = useContext(UserContext);
+  console.log(users);
   return (
     <div>
-      <Header/> 
-      <BriefDesc/> 
-      <Posts/>
+      <Header />
+      <BriefDesc />
+      <Posts />
     </div>
-  )
-}
+  );
+};
 
 const BriefDesc = () => {
   return (
@@ -23,10 +26,12 @@ const BriefDesc = () => {
           Select some topics you&apos;re interested in to help personalize your
           Twitter experience, starting with finding people to follow.
         </p>
-        <button className={styles.bd__card__button} type="submit">Get Started</button>
+        <button className={styles.bd__card__button} type="submit">
+          Get Started
+        </button>
       </div>
     </div>
   );
-}
+};
 
-export default IndexPageHome
+export default IndexPageHome;
