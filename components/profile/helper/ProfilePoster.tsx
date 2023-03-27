@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ArrowLeft, CalenderIcon } from '../../helper/NavigtorIcons';
 import styles from '../styles/profile.module.css';
 import { useSession } from 'next-auth/react';
+import { useTheme } from '../../../context/UserProvider';
 
 const ProfilePoster = () => {
   const { data: session } = useSession();
+  const { user } = useTheme();
+
   return (
     <div className={styles.profile__body}>
       <div className={styles.profile__top__container}>
@@ -13,7 +16,7 @@ const ProfilePoster = () => {
         </span>
 
         <div>
-          <div className={styles.profile__username}>USERNAME</div>
+          <div className={styles.profile__username}>{user?.name}</div>
           <p className={styles.profile__tweets}>10 Tweets</p>
         </div>
       </div>
@@ -49,17 +52,17 @@ const ProfilePoster = () => {
             {/* <div className={styles.bio__user__joined}> */}
             <CalenderIcon />
             <span className={styles.bio__user__joined__text}>
-              Joined 1-12-2019
+              {user?.createdAt.slice(0, 10)}
             </span>
           </div>
         </div>
 
         <div className={styles.bio__user__follows}>
           <span className={styles.bio__user__follows__following}>
-            <b>{5 || 0}</b> Following
+            <b>{user?.following.length || 0}</b> Following
           </span>
           <span className={styles.bio__user__follows__followers}>
-            <b>{5 || 0}</b> Followers
+            <b>{user?.followers.length || 0}</b> Followers
           </span>
         </div>
       </div>

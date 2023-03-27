@@ -11,6 +11,21 @@ interface User {
 }
 
 interface ResponseData {
-  data: User | [];
+  data: User | null;
   message: string;
+}
+
+interface threeUser {
+  oldUsers: User[];
+  popularUsers: User[];
+  suggestedUsers: User[];
+}
+
+interface longResponse {
+  data: threeUser;
+  message: string;
+}
+
+interface UserContextType {
+  user: User | null;
 }
